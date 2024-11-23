@@ -1,0 +1,12 @@
+Main: menu.o ins.o pro.o gst.o Main.o
+gcc menu.o ins.o pro.o gst.o Main.o -o Main
+Main.o: Main.c egHeader.h
+gcc -c Main.c
+menu.o: menu.c egHeader.h
+gcc -c menu.c
+int.o: ins.c egHeader.h
+gcc -c ins.c
+pro.o: pro.c egHeader.h
+gcc -c pro.c
+gst.o: gst.c egHeader.h
+gcc -c gst.c
